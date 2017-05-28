@@ -1,9 +1,10 @@
 from urllib.parse import urljoin
 
-from humble.downloader import HumbleDownloader, BASE_URL
+from humble.downloader import BASE_URL
 
 
-def reddit(games):
+def markdown(games):
+    """Output games as markdown"""
     header = [
         '| Name   | Discount | Price | Platform |',
         '|:-------|:--------:|:-----:|:---------:|'
@@ -18,12 +19,5 @@ def reddit(games):
         lines.append('| {name} | {discount} | {price} | {platform} |'.format(**item))
     lines = sorted(lines, reverse=True)
     return '  \n'.join(header + lines)
-
-
-def reddit_vr(games):
-    lines = reddit(games).split('  \n')
-    headers = lines[:2]
-    lines = [l for l in lines if 'vive' in l or 'oculus-rift' in l]
-    return '  \n'.join(headers + lines)
 
 

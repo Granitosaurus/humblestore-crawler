@@ -1,2 +1,2 @@
 from humble.downloader import HumbleDownloader
-from humble.reddit import reddit, reddit_vr
+from humble.markdown import markdown, markdown_vr

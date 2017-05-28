@@ -9,5 +9,5 @@ setup(
     license='GPLv3',
     author='granitosaurus',
     author_email='bernardas.alisauskas@gmail.com',
-    description='simple crawler for humble bundle store with reddit comments output.'
+    description='simple crawler for humble bundle store with markdown comments output.'
 )

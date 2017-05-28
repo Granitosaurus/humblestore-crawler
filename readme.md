@@ -5,10 +5,10 @@ With ability to output formatted reddit comments.
 
 ## Usage:
 
-    from humble import HumbleDownloader, reddit, reddit_vr
+    from humble import HumbleDownloader, markdown
     dl = HumbleDownloader('https://www.humblebundle.com/store/promo/spring-sale-encore/')
     games = dl.download_games()
-    print(reddit(games))
+    print(markdown(games))
 
 result example:
 
